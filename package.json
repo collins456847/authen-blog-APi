@@ -1,0 +1,32 @@
+{
+  "name": "blog-api-authenticated",
+  "version": "2.0.0",
+  "description": "Blog API with JWT authentication and article ownership",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "seed": "node seed.js",
+    "migrate:articles": "node scripts/assignExistingArticles.js"
+  },
+  "keywords": [
+    "blog",
+    "api",
+    "express",
+    "mongodb",
+    "jwt",
+    "authentication"
+  ],
+  "type": "commonjs",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "joi": "^18.3.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^9.11.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
